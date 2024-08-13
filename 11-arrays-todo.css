@@ -1,0 +1,63 @@
+body{
+  font-family: arial;
+  font-size: 18px;
+}
+
+.css-input, 
+.css-input-date{
+  font-size: 16px;
+  padding: 8px;
+  border: 2px solid gray;
+}
+
+.css-input:focus{
+  border-color: rgb(29, 0, 193);
+  outline: none;
+}
+
+.css-error{
+  border-color: rgb(255, 0, 0);
+  outline: none;
+}
+
+.css-add-button{
+  background-color: green;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 11px 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.css-delete-button{
+  background-color: darkred;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 11px 28px;
+  border: none;
+  cursor: pointer;
+}
+
+.css-add-button:hover,
+.css-delete-button:hover{
+  opacity: 0.9;
+}
+
+.task-grid,
+.top-grid{
+display: grid;
+grid-template-columns: 200px 150px 110px;
+column-gap: 10px;
+row-gap: 12px;
+align-items: center;
+}
+
+.top-grid{
+  margin-bottom: 12px;
+}
+
+.css-task-name{
+  line-height: 25px;
+}
