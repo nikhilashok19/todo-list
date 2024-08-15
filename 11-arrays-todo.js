@@ -45,7 +45,7 @@ function addTolist()
   {
     dateElement.classList.add('css-error');
   }
-  else{
+  if(taskElement.value!=''&&dateElement.value!=''){
     if(taskElement.classList.contains('css-error'))
     {
       taskElement.classList.remove('css-error');
