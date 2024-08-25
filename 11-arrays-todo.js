@@ -1,4 +1,4 @@
-const arrayTodo=[];
+const arrayTodo=JSON.parse(localStorage.getItem('tasks'))||[];
 displayTodo();
 function displayTodo()
 {
@@ -21,6 +21,7 @@ function displayTodo()
     </div>
     <button onclick="
     arrayTodo.splice(${i},1);
+    saveToLocalStorage();
     displayTodo();
     " class="css-delete-button">
     Delete
@@ -66,6 +67,7 @@ function enterKeypressed(event)
   if(event.key==='Enter')
   {
     addTolist();
+    saveToLocalStorage();
   }
 }
 
@@ -85,4 +87,7 @@ function checkDate()
   {
     dateElement.classList.remove('css-error');
   }
+}
+function saveToLocalStorage(){
+  localStorage.setItem('tasks',JSON.stringify(arrayTodo));
 }
