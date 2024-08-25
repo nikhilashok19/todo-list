@@ -11,7 +11,7 @@
   <div class="top-grid">
     <input type="text" placeholder="Todo name" class="js-input css-input" onkeydown="enterKeypressed(event);">
     <input type="date" class="js-input-date css-input-date" onclick="checkTask();" onkeydown="enterKeypressed(event);">
-    <button onclick="addTolist(); checkTask(); checkDate();" class="css-add-button">Add</button>
+    <button onclick="addTolist(); checkTask(); checkDate(); saveToLocalStorage();" class="css-add-button">Add</button>
   </div>
   <div class="tasks-cont task-grid"></div>
   <script src="11-arrays-todo.js"></script>
